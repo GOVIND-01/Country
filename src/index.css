@@ -14,16 +14,29 @@ code {
 .main-box{
   width: 84%;
   margin: auto;
-  background-color: aqua;
-  
+  border: 1px;
+  padding: 3px;
  
 }
-.main-box div,.main-box button{
+.main-box div {
+  border: 1px solid black;
+  width: 100%;
+  height: 20px;
+}
+.main-box div div,.main-box button,.main-header div div{
  background-color: bisque;
- width: 15%;
+ width: 16.5%;
  height: 20px;
  float: left;
+ border: none;
 
+}
+
+.main-header{
+  width: 84%;
+  margin: auto;
+  border: 1px;
+  padding: 3px;
 }
 /* .main-box div{
   border: 1px solid black;

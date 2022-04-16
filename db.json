@@ -1,24 +1,6 @@
 {
   "data": [
     {
-      "city": "Cabittaogan",
-      "country": "Philippines",
-      "population": 5752250,
-      "id": 3
-    },
-    {
-      "city": "Rybnoye",
-      "country": "Russia",
-      "population": 275573,
-      "id": 4
-    },
-    {
-      "city": "New York City",
-      "country": "United States",
-      "population": 9515056,
-      "id": 5
-    },
-    {
       "city": "Mangarine",
       "country": "Philippines",
       "population": 3172821,
@@ -419,12 +401,6 @@
       "country": "Poland",
       "population": 6311672,
       "id": 73
-    },
-    {
-      "city": "Yabrūd",
-      "country": "Syria",
-      "population": 183744,
-      "id": 74
     },
     {
       "city": "Ponta do Sol",
