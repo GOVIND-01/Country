@@ -1,21 +1,20 @@
 import React from "react";
-const axios = require('axios').default;
+
 import {useEffect,useState} from "react";
-function Show (){
+const axios = require('axios').default;
+export default function Show(){
     
 // id	Country	City	Population	Edit	Delete
 // 1	India	Delhi	19,000,000	Edit	Delete
 // 2	SriLanka	Colombo	5,600,000	Edit	Delete
 // 3	USA	Chicago	2,920,000	Edit	Delete
- const [show,setShow]=useState([]) 
- useEffect(()=>{
+ const [show,setShow]=useState([])
+ function handleShow(){
     const axios = require('axios');
-
-    
-    axios.get('/user?ID=12345')
+    axios.get('http://localhost:8080/data')
       .then(function (response) {
        
-        console.log(response);
+        setShow(response.data);
       })
       .catch(function (error) {
        
@@ -24,6 +23,24 @@ function Show (){
       .then(function () {
        
       });
+ } 
+ useEffect(()=>{
+    handleShow()
  },[])
+
+ return (
+    <div >
+     <div className="main-box">{show.map((e,index)=>(
+        <>
+          <div>{index+1}.</div>
+          <div>{e.country}</div>
+          <div>{e.city}</div>
+          <div>{e.population}</div>
+          <button>Edit</button>  
+          <button on>Delete</button> 
+          </>
+     ))}</div>
+       </div>
+ )
 
 }

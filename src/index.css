@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.main-box{
+  width: 84%;
+  margin: auto;
+  background-color: aqua;
+  
+ 
+}
+.main-box div,.main-box button{
+ background-color: bisque;
+ width: 15%;
+ height: 20px;
+ float: left;
+
+}
+/* .main-box div{
+  border: 1px solid black;
+} */
