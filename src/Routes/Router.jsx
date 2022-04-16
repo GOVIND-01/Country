@@ -37,7 +37,21 @@ export default function Show(){
           <div>{e.city}</div>
           <div>{e.population}</div>
           <button>Edit</button>  
-          <button on>Delete</button> 
+          <button onClick={()=>{
+               const axios = require('axios');
+               axios.delete(`http://localhost:8080/data/${e.id}`)
+                 .then(function (response) {
+                  
+                   //setShow(response.data);
+                 })
+                 .catch(function (error) {
+                  
+                   console.log(error);
+                 })
+                 .then(function () {
+                    handleShow()
+                 });
+          }}>Delete</button> 
           </>
      ))}</div>
        </div>
